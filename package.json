@@ -1,0 +1,29 @@
+{
+  "name": "iris-fec-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpt19-taniwha/iris-fec-proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rpt19-taniwha/iris-fec-proxy/issues"
+  },
+  "homepage": "https://github.com/rpt19-taniwha/iris-fec-proxy#readme",
+  "devDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^13.11.0"
+  }
+
+}
