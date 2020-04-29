@@ -1,0 +1,648 @@
+body {
+  background-color:rgb(255, 255, 255);
+  margin: 0px;
+}
+
+/* SEARCH BAR */
+#search-wrapper {
+  display: flex;
+  padding: 12px 36px 0px 36px;
+  max-width: 1400px;
+  line-height:1.4;
+  align-items: center;
+  height: 48px;
+  margin: 0 auto;
+}
+#search-wrapper #etsy {
+  width: 87px;
+  margin-left: 30px;
+  margin-right: 3px;
+  cursor:pointer;
+}
+#search-wrapper .search-input-wrapper {
+  width: 1115.2px;
+  display: flex;
+}
+#search-wrapper .search-input {
+  border: 1px solid rgba(34, 34, 34, 0.3);
+  background-color: rgba(34, 34, 34, 0.07);
+  border-bottom-left-radius:96px;
+  border-top-left-radius:96px;
+  border-right-style:none;;
+  box-sizing:border-box;
+  width: 1036.2px;
+  cursor:text;
+  display:block;
+  outline-style:none;
+  font-size:16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  height:48px;
+  margin: 0px 0px 0px 3px;
+  padding: 9px 42px 9px 18px;
+}
+#search-wrapper .search-input-button {
+  border: 1px solid rgba(34, 34, 34, 0.3);
+  background-color: rgba(34, 34, 34, 0.07);
+  border-bottom-right-radius:96px;
+  border-left-style:none;
+  border-top-right-radius:96px;
+  cursor:pointer;
+  display:block;
+  align-items:flex-start;
+  font-weight:700;
+  height:48px;
+  outline-style:none;
+  position:relative;
+  width:61px;
+  margin-right: 18px;
+  padding: 12px 21px 12px 15px;
+}
+#search-wrapper .search-input-button:hover {
+  background-color: rgba(34, 34, 34, 0.15);
+}
+#search-wrapper .search-input-button-icon {
+  width: 22px;
+}
+#search-wrapper .search-signin-button {
+  border: 0px none rgb(34, 34, 34);
+  display: block;
+  height: 36px;
+  width: 72.7969px;
+  font-weight: 600;
+  font-size: 13px;
+  margin-right: 10px;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  outline: none;
+  cursor: pointer;
+}
+#search-wrapper .search-signin-button:hover {
+  border-radius:24px;
+  background-color: rgba(34, 34, 34, 0.07);
+}
+#search-wrapper .cart-wrapper {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+#search-wrapper .cart-wrapper:hover {
+  border-radius:24px;
+  background-color: rgba(34, 34, 34, 0.07);
+}
+#search-wrapper #cart {
+  align-self: center;
+  cursor: pointer;
+  line-height: 16px;
+  text-align: center;
+  width: 46px;
+  height: 38px;
+}
+
+/* MENU */
+#menu-wrapper {
+  display: flex;
+  height:100%;
+  max-width: 1400px;
+  align-items: center;
+  margin: 0 auto;
+}
+#menu-wrapper .menu-list {
+  color:rgb(34, 34, 34);
+  display:flex;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  font-weight:300;
+  height:100%;
+  justify-content: space-between;
+  line-height:18px;
+  margin:0px 20px;
+  padding: 0px 28px;
+  padding-inline-start:18px;
+  width: 1400px;
+}
+#menu-wrapper #menu-item {
+  color:rgb(34, 34, 34);
+  cursor: pointer;
+  display: inline;
+  font-size: 13px;
+  letter-spacing: .5px;
+  margin-bottom: 0px;
+  height: 100%;
+  line-height: 42px;
+  padding-top: 3px;
+}
+#menu-item:after {
+  display:block;
+  content: '';
+  border-bottom: 2px solid black;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  margin-bottom:-2px;
+}
+#menu-item:hover:after{
+  transform: scaleX(1);
+}
+#menu-wrapper .split {
+  border-bottom-color:rgba(34, 34, 34, 0.15);
+  border-bottom-style:solid;
+  border-bottom-width:2px;
+  bottom:0px;
+  box-sizing:border-box;
+  content:"";
+  display:block;
+  height:2px;
+  left:0px;
+  position:absolute;
+  right:0px;
+  width:1066px;
+}
+#menu-wrapper .menu {
+  height: 44px
+}
+#menu-wrapper .gift {
+  margin-right: 3px;
+  align-self: center;
+}
+#menu-popup-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: absolute;
+  width: 100%;
+}
+#menu-popup-wrapper .menu-popup-list {
+  grid-column-start: 3;
+  grid-column-end: 11;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:14px;
+  height:auto;
+  padding-bottom:18px;
+  padding-left:0px;
+  padding-right:0px;
+  padding-top:12px;
+  text-align:left;
+  text-size-adjust:100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  z-index: 10;
+  margin: 0px -30px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#menu-popup-wrapper .menu-popup-item-wrapper, #menu-popup-wrapper .menu-popup-item-wrapper1{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  height: 35px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#menu-popup-wrapper .menu-popup-item-wrapper:hover {
+  background-color: rgba(34, 34, 34, 0.07);
+}
+#menu-popup-wrapper #menu-popup-item {
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: .7px;
+
+}
+#menu-popup-wrapper .menu-popup-item-topic {
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: .7px;
+}
+
+hr {
+  margin-block-start: 0em;
+  margin: 0px;
+  border: 1px solid rgba(34, 34, 34, 0.20);
+}
+
+/* CONTENT */
+#content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 20px;
+}
+#content-wrapper .left-wrapper {
+  grid-column-start: 2;
+  grid-column-end: 8;
+  margin-right: 20px;
+  margin-left: 130px;
+}
+#content-wrapper .right-wrapper {
+  margin-left: 95px;
+  grid-column-start: 8;
+  grid-column-end: 12;
+  margin-right: 20px
+}
+
+/* FOOTER */
+#footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color:rgb(47, 70, 108);
+  height:330px;
+}
+#footer-wrapper .footer-list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0px 100px
+}
+#footer-wrapper #footer-2 {
+  width: 100%;
+}
+#footer-wrapper .footer-shop-wrapper {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+#footer-wrapper .footer-sell-wrapper {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  margin-left: 50px;
+}
+#footer-wrapper .footer-about-wrapper {
+  grid-column-start: 7;
+  grid-column-end: 8;
+}
+#footer-wrapper .footer-help-wrapper {
+  grid-column-start: 9;
+  grid-column-end: 11;
+  margin-left: 50px;
+}
+#footer-wrapper .footer-shop-wrapper, #footer-wrapper .footer-sell-wrapper, #footer-wrapper .footer-about-wrapper, #footer-wrapper .footer-help-wrapper {
+  padding: 10px;
+}
+#footer-wrapper .footer-shop-list, #footer-wrapper .footer-sell-list, #footer-wrapper .footer-about-list, #footer-wrapper .footer-help-list {
+  list-style-type: none;
+  margin: 5px 0px;
+  padding: 0px;
+  font-size: 13px;
+}
+#footer-wrapper #footer-item:hover {
+  text-decoration: underline;
+}
+#footer-wrapper .footer-label {
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:16px;
+  font-weight:400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#footer-wrapper #footer-item {
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  font-weight:200;
+  cursor:pointer;
+  letter-spacing: 1px;
+  margin: 10px 0px 15px 0px;
+}
+
+/* SELLER */
+#seller-service-container {
+  margin-top: 20px;
+  width: 387.75px;
+  padding: 0px 30px 0px 0px;
+}
+#seller-service-container .shipping-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 57px;
+  margin-bottom: 15px;
+  /* justify-content: stretch; */
+}
+#seller-service-container .ready-to-ship {
+  display: flex;
+  flex-direction: column;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  font-weight:300;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 57px;
+}
+#seller-service-container .ready-to-ship-time {
+  font-family:Guardian-EgypTT, serif;
+  font-size: 26px;
+  font-weight:300;
+  letter-spacing:0.35px
+}
+#seller-service-container .ship-from {
+  display: flex;
+  flex-direction: column;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  font-weight:300;
+}
+#seller-service-container .ship-from-location {
+  font-family:Guardian-EgypTT, serif;
+  font-size:26px;
+  font-weight:300;
+  height:96px;
+  letter-spacing:0.35px
+}
+#seller-service-container .cost-to-ship {
+  display: flex;
+  flex-direction: column;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  font-weight:300;
+  height:57px;
+  margin-bottom: 15px
+}
+#seller-service-container .cost-to-ship-amount {
+  font-family:Guardian-EgypTT, serif;
+  font-size: 26px;
+  font-weight:300;
+  letter-spacing:0.35px
+}
+#seller-service-container .delivery {
+  font-family:Guardian-EgypTT, serif;
+  font-size:26px;
+  font-weight:300;
+  height:96px;
+  letter-spacing:0.35px
+}
+#seller-service-container img {
+  border-bottom-left-radius:50%;
+  border-bottom-right-radius:50%;
+  border-top-left-radius:50%;
+  border-top-right-radius:50%;
+}
+#seller-service-container .message-username {
+  border: 2px solid rgb(34, 34, 34);
+  border-radius: 24px;
+  cursor: pointer;
+  outline-style:none;
+  height:48px;
+  width:432px;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:16px;
+  font-weight:500;
+  margin-bottom: 20px;
+}
+#seller-service-container .user-profile {
+  display: flex;
+  margin-bottom: 15px
+
+}
+#seller-service-container .user-profile img {
+  margin-right: 15px
+
+}
+#seller-service-container .user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#seller-service-container .username {
+  color:rgb(34, 34, 34);
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:16px;
+  font-weight:300;
+  margin-bottom: 2px
+}
+#seller-service-container .username-owner {
+  color:rgb(89, 89, 89);
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  font-weight:300;
+}
+#seller-service-container a {
+  text-decoration: underline;
+}
+#seller-service-container .deliver-to {
+  background-color:rgba(0, 0, 0, 0);
+  border-radius: 24px;
+  border: 0px none rgb(34, 34, 34);
+  height:42px;
+  width: 207.312px;;
+  outline: none;
+  cursor:pointer;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: -20px;
+}
+#seller-service-container .deliver-to:hover  {
+  background-color: rgba(34, 34, 34, 0.07);
+
+}
+#seller-service-container .deliver-to-text {
+  background-color:rgba(0, 0, 0, 0);
+  border-radius: 24px;
+  border: 0px none rgb(34, 34, 34);
+  width:auto;
+  outline: none;
+  cursor:pointer;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  padding: 0px;
+  justify-self: center;
+  margin-right: 5px;
+}
+#seller-service-container .deliver-to-arrow {
+  background-color:rgba(0, 0, 0, 0);
+  border-radius: 24px;
+  border: 0px none rgb(34, 34, 34);
+  width: auto;
+  outline: none;
+  cursor:pointer;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:16px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  padding-top: 2px;
+  justify-self: center;
+}
+#seller-service-container .cost-label {
+  margin-bottom: 5px;
+}
+#seller-service-container .faqs {
+  background-color:rgba(0, 0, 0, 0);
+  border-radius: 24px;
+  border: 0px none rgb(34, 34, 34);
+  height:42px;
+  width:105.859px;
+  outline: none;
+  cursor:pointer;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:16px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  padding: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: -20px;
+}
+#seller-service-container .faqs:hover  {
+  background-color: rgba(34, 34, 34, 0.07);
+}
+#seller-service-container .faqs-text {
+  background-color:rgba(0, 0, 0, 0);
+  border-radius: 24px;
+  border: 0px none rgb(34, 34, 34);
+  width:auto;
+  outline: none;
+  cursor:pointer;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  padding: 0px;
+  justify-self: center;
+  margin-right: 5px;
+}
+#seller-service-container .faqs-arrow {
+  background-color:rgba(0, 0, 0, 0);
+  border-radius: 24px;
+  border: 0px none rgb(34, 34, 34);
+  width: auto;
+  outline: none;
+  cursor:pointer;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:16px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  padding-top: 2px;
+  justify-self: center;
+}
+#seller-service-container .meet-seller {
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  margin-bottom: 15px;
+}
+
+/* SUBSCRIBE */
+
+#subscribe-container {
+  background-color: rgb(215, 230, 245);
+  height:200px;
+}
+#subscribe-container #footer-1 {
+  width: 100%;
+}
+#subscribe-container .subscribe-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  height: 134px;
+}
+#subscribe-container .subscribe-text {
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:16px;
+  font-weight:400;
+  margin-bottom: 15px;
+  letter-spacing: .7px;
+}
+#subscribe-container .subscribe-input-wrapper {
+  display: flex;
+  flex-direction: row;
+  width:480px;
+}
+#subscribe-container .subscribe-input {
+  background-color: white;
+  border-bottom-color:rgba(34, 34, 34, 0.15);
+  border-bottom-left-radius:96px;
+  border-bottom-right-radius:0px;
+  border-bottom-style:solid;
+  border-bottom-width:1px;
+  border-left-color:rgba(34, 34, 34, 0.15);
+  border-left-style:solid;
+  border-left-width:1px;
+  border-right-color:rgb(34, 34, 34);
+  border-right-style:none;
+  border-right-width:0px;
+  border-top-color:rgba(34, 34, 34, 0.15);
+  border-top-left-radius:96px;
+  border-top-style:solid;
+  border-top-width:1px;
+  cursor:text;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:16px;
+  font-weight:300;
+  height:28px;
+  outline-style:none;
+  padding: 9px 30px 9px 18px;
+  width:365.328px;
+}
+#subscribe-container .subscribe-input::placeholder {
+  padding-left: 10px;
+  letter-spacing: .7px;
+}
+#subscribe-container .subscribe-input-button-wrapper {
+  background-color: white;
+  border-bottom-color:rgba(34, 34, 34, 0.15);
+  border-bottom-left-radius:0px;
+  border-bottom-right-radius:96px;
+  border-left-color:rgb(34, 34, 34);
+  border-left-width:0px;
+  border-right-color:rgba(34, 34, 34, 0.15);
+  border-right-width:0px;
+  border-top-color:rgba(34, 34, 34, 0.15);
+  border-top-left-radius:0px;
+  border-top-right-radius:96px;
+  border-top-width:0px;
+}
+#subscribe-container .subscribe-input-button {
+  background-color: white;
+  border-bottom-color:rgba(34, 34, 34, 0.15);
+  border-bottom-left-radius:0px;
+  border-bottom-right-radius:96px;
+  border-bottom-style:solid;
+  border-left-color:rgb(34, 34, 34);
+  border-left-style:none;
+  border-left-width:0px;
+  border-right-color:rgba(34, 34, 34, 0.15);
+  border-right-style:solid;
+  border-right-width:1px;
+  border-top-color:rgba(34, 34, 34, 0.15);
+  border-top-left-radius:0px;
+  border-top-right-radius:96px;
+  border-top-style:solid;
+  border-top-width:1px;
+  cursor:pointer;
+  font-family:"Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size:16px;
+  font-stretch:100%;
+  font-weight:500;
+  height:48px;
+  letter-spacing:normal;
+  outline-style:none;
+  padding-bottom:12px;
+  padding-left:15px;
+  padding-right:21px;
+  padding-top:12px;
+  text-align:left;
+  width:114.672px;
+  letter-spacing: .7px;
+
+}
+#subscribe-container .subscribe-input-button:hover {
+  background-color: rgba(34, 34, 34, 0.07);
+
+}
+
+/* TERMS */
+
+#terms-wrapper {
+  background-color:rgb(35, 35, 71);
+  height:79px;
+}
